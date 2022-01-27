@@ -85,9 +85,9 @@
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-(require 'init-erlang)
+;; (require 'init-erlang)
 (require 'init-javascript)
-(require 'init-php)
+;; (require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
 (require 'init-html)
@@ -98,13 +98,13 @@
 (require 'init-haskell)
 (require 'init-elm)
 (require 'init-purescript)
-(require 'init-ruby)
-(require 'init-rails)
+;; (require 'init-ruby)
+;; (require 'init-rails)
 (require 'init-sql)
-(require 'init-ocaml)
+;; (require 'init-ocaml)
 (require 'init-j)
 (require 'init-nim)
-(require 'init-rust)
+;; (require 'init-rust)
 (require 'init-toml)
 (require 'init-yaml)
 (require 'init-docker)
@@ -147,7 +147,7 @@
 
 (when (fboundp 'global-eldoc-mode)
   (add-hook 'after-init-hook 'global-eldoc-mode))
-
+n
 (require 'init-direnv)
 
 
@@ -168,6 +168,8 @@
 
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local nil t)
+
+(require 'init-zhoujp)
 
 (provide 'init)
 
